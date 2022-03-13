@@ -1,0 +1,142 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: "Montserrat";
+    font-weight: 600;
+    background-image: url("./assets/images/content/repair-main.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+// HEADER SECTION 
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0px;
+    width: 100px;
+    height: calc(100vh - 80px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    &__navigation {
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: auto;
+            transform: rotate(-90deg);
+            color: #fff;
+            text-align: center;
+        }
+        .big-button--link {
+            width: 200px;
+        }
+    }
+    &__navigation-header {
+        font-size: 18px;
+        transition: all 0.3s ease;
+        &:hover {
+            color: $gay;
+        }
+    }
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__greeting-section {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        .greeting-section__header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            left: 150px;
+            top: 80px;
+            padding-right: 40px;
+            width: calc(100% - 190px);
+            height: 100px;
+            .header-logo {
+                width: 150px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .image-caption {
+                    margin-top: 10px;
+                    font-weight: 400;
+                    font-size: 40px;
+                    color: #fff;
+                }
+            }
+            .header-apply {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: fit-content;
+                .header-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                }
+                .header-address,
+                .header-phone {
+                    font-size: 22px;
+                    color: #fff;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+                }
+                // .header-button {
+                //     font-size: 22px;
+                //     font-weight: 500;
+                //     width: 40%;
+                //     height: 40px;
+                //     display: flex;
+                //     align-items: center;
+                //     justify-content: center;
+                //     color: #fff;
+                //     border-radius: 8px;
+                //     background: linear-gradient(45deg, $gay, $lesbian);
+                // }
+            }
+        }
+    }
+    &__whyus-section {
+        width: 100%;
+        height: 100vh;
+        background-image: url("./assets/images/content/repair-sub.jpg");
+        background-attachment: fixed;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    &__examples-section {
+        width: 100%;
+        height: 100vh;
+    }
+}

@@ -5,38 +5,32 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="./style.min.css")
-        link(rel="shortcut icon", href="./assets/images/content/logo.svg", type="image/x-icon")
+        link(rel="shortcut icon", href="./assets/images/content/logo.png", type="image/x-icon")
         title Ремонт карданных валов
     body
         header.header 
-            .header__logo-container 
-                img.header__logo-image(src="./assets/images/content/logo.png", alt="")
-                .header__logo-caption TURBO
             .header__navigation 
                 a(href="./repair-template.html") 
-                    .header__navigation-button
-                        .header__navigation-header Ремонт карданных валлов
+                    .header__navigation-header Ремонт
                 a(href="./repair-template.html") 
-                    .header__navigation-button
-                        .header__navigation-header Ремонт автомобильных агрегатов
+                    .header__navigation-header Балансировка
+                a(href="./repair-template.html").big-button--link 
+                    .header__navigation-header Интернет-магазин
                 a(href="./repair-template.html") 
-                    .header__navigation-button
-                        .header__navigation-header Механическая обработка
-                a(href="./repair-template.html") 
-                    .header__navigation-button
-                        .header__navigation-header Балансировка
-                a(href="./repair-template.html") 
-                    .header__navigation-button
-                        .header__navigation-header Наш интернет-магазин
-                a(href="./repair-template.html") 
-                    .header__navigation-button
-                        .header__navigation-header Контакты
-            .header__contact-info
-                .header__contact-container 
-                    .header__contact-address Г.ИРКУТСК, УЛ.СУРНОВА, 22/7
-                    .header__contact-phone +7(3952) 66-77-71
-                .header__contact-button Оставить заявку
+                    .header__navigation-header Контакты
         main.main 
+            .main__greeting-section 
+                .greeting-section__header
+                    .header-logo
+                        img(src="./assets/images/content/logo.png", alt="")
+                        .image-caption TURBO
+                    .header-apply 
+                        .header-container
+                            .header-address Г. ИРКУТСК, УЛ.СУРНОВА, 22/7
+                            .header-phone +7(3952) 66-77-71
+                        //- .header-button Заказать звонок
+            .main__whyus-section
+            .main__examples-section 
         footer.footer
         script(src="./assets/js/jquery.min.js")
         script(src="./assets/js/plugins.min.js")
