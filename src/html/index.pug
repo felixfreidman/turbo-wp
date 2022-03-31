@@ -9,28 +9,26 @@ html(lang="en")
         title Ремонт карданных валов
     body
         header.header 
-            .header__navigation 
-                a(href="./repair-template.html") 
-                    .header__navigation-header Ремонт
-                a(href="./repair-template.html") 
-                    .header__navigation-header Балансировка
-                a(href="./repair-template.html").big-button--link 
-                    .header__navigation-header Интернет-магазин
-                a(href="./repair-template.html") 
-                    .header__navigation-header Контакты
-        main.main 
-            .main__greeting-section 
-                .greeting-section__header
-                    .header-logo
-                        img(src="./assets/images/content/logo.png", alt="")
-                        .image-caption TURBO
-                    .header-apply 
-                        .header-container
-                            .header-address Г. ИРКУТСК, УЛ.СУРНОВА, 22/7
-                            .header-phone +7(3952) 66-77-71
-                        //- .header-button Заказать звонок
-            .main__whyus-section
-            .main__examples-section 
+            .header-logo
+                 img(src="./assets/images/content/logo.png", alt="")
+                 .logo-caption Turbo
+            .header-navigation 
+                a(href="./services.html").navigation-link Услуги
+                a(href="./shop.html").navigation-link Магазин
+                a(href="./contacts.html").navigation-link Контакты
+            .header-custom
+                .custom-cart
+                    a.cart-image
+                    span.cart-amount 0
+                .custom-button Оставить заявку
+        main.main
+            .greeting-section
+                .greeting-section--red 
+                .greeting-section--rest 
+            .menu-section 
+            .show-section 
+            .offer-section 
+            .apply-section
         footer.footer
         script(src="./assets/js/jquery.min.js")
         script(src="./assets/js/plugins.min.js")
