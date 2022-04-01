@@ -28,6 +28,7 @@ html {
     padding: 0 20px;
     height: 100px;
     display: flex;
+    z-index: 100;
     align-items: center;
     justify-content: space-between;
     &-logo {
@@ -133,19 +134,196 @@ html {
             width: 40%;
             height: 100%;
             background-color: #bb240d;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: center;
+            position: relative;
         }
         &--rest {
-            width: 60%;
-            height: 100%;
-            background-image: url(./assets/images/content/main-second.jpg);
+            width: calc(60% - 200px);
+            height: calc(100% - 200px);
+            background: linear-gradient(to top, #585858ba, #24212785), url(./assets/images/content/main-second.jpg);
             background-size: cover;
             background-position: 40% 50%;
-            box-shadow: inset 10px 10px 2000px rgba($color: #000000, $alpha: 1);
+            padding: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: end;
+        }
+        .greeting-header {
+            font-size: 44px;
+            color: #fff;
+            position: absolute;
+            right: 20px;
+            top: 40%;
+            bottom: 0;
+            margin-top: auto;
+            margin-bottom: auto;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        .greeting-subheader {
+            font-size: 54px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #fff;
+            position: absolute;
+            width: 700px;
+            left: 160px;
+            top: 50%;
+            bottom: 0;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        .greeting-more {
+            border: 3px solid #fff;
+            font-size: 24px;
+            text-transform: uppercase;
+            display: block;
+            padding: 12px 30px;
+            color: #fff;
+            position: absolute;
+            left: 160px;
+            top: 55%;
+            height: fit-content;
+            bottom: 0;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        .greeting-square {
+            width: 250px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            border: 3px solid #bb240d;
+            border-left: none;
+            position: relative;
+            .company-phone,
+            .company-adress {
+                position: absolute;
+                left: -50px;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                width: 300px;
+                justify-content: flex-start;
+                margin-bottom: 15px;
+                .phone-header,
+                .adress-header {
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    img {
+                        width: 25px;
+                        height: 25px;
+                        margin-right: 10px;
+                    }
+                    span {
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                }
+                .phone-number,
+                .adress-number {
+                    font-size: 22px;
+                    font-weight: 700;
+                    color: #fff;
+                    line-height: 30px;
+                }
+            }
+            .company-phone {
+                top: 15%;
+            }
+            .company-adress {
+                top: 50%;
+            }
         }
     }
     .menu-section {
         background-color: #1f1f1f;
         width: 100%;
-        height: 100px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        .menu-header {
+            width: calc(40% - 95px);
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            height: 100%;
+            background-color: #333;
+            color: #fff;
+            font-size: 36px;
+            text-transform: uppercase;
+            padding-right: 95px;
+            position: sticky;
+        }
+        .menu-navigatiom {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .navigation-tab {
+                width: 24%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                &:hover {
+                    cursor: pointer;
+                    .tab-header {
+                        color: #bb240d !important;
+                    }
+                    img {
+                        filter: invert(18%) sepia(75%) saturate(2224%) brightness(70%) contrast(107%);
+                    }
+                }
+                img {
+                    width: 50px;
+                    height: 50px;
+                    margin-bottom: 20px;
+                    filter: hue-rotate(349deg);
+                    transition: all 0.3s ease;
+                }
+                .img-treat {
+                    width: 70px;
+                    height: 70px;
+                    margin-bottom: 5px;
+                }
+                .tab-header {
+                    color: #fff;
+                    text-align: center;
+                    font-size: 16px;
+                    transition: all 0.3s ease;
+                }
+                .img-active {
+                    filter: invert(18%) sepia(75%) saturate(2224%) hue-rotate(349deg) brightness(70%) contrast(107%);
+                }
+                .tab-active {
+                    color: #bb240d;
+                }
+            }
+        }
+    }
+    .show-section {
+        background-color: #fff;
+        width: 100%;
+        height: 100vh;
+    }
+    .offer-section {
+        width: 100%;
+        height: 100vh;
+        background-color: #1f1f1f;
+    }
+    .apply-section {
+        width: 100%;
+        height: 300px;
+        background-color: #bb240d;
     }
 }

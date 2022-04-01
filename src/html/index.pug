@@ -11,7 +11,7 @@ html(lang="en")
         header.header 
             .header-logo
                  img(src="./assets/images/content/logo.png", alt="")
-                 .logo-caption Turbo
+                 .logo-caption Кардан сервис
             .header-navigation 
                 a(href="./services.html").navigation-link Услуги
                 a(href="./shop.html").navigation-link Магазин
@@ -24,8 +24,37 @@ html(lang="en")
         main.main
             .greeting-section
                 .greeting-section--red 
+                    .greeting-header Кардан-сервис
+                    .greeting-subheader Ремонт и изготовление карданных валов
+                    a(href="#menu").greeting-more Узнать больше 
                 .greeting-section--rest 
+                    .greeting-square
+                        .company-phone
+                            .phone-header 
+                                img(src="./assets/images/content/phoneCall.svg", alt="")
+                                span Звоните нам
+                            .phone-number +7 (3952) 66‑22-42
+                        .company-adress
+                            .adress-header 
+                                img(src="./assets/images/content/mapMarker.svg", alt="")
+                                span Мы здесь
+                            .adress-number Г. ИРКУТСК, УЛ.СУРНОВА, 22/7
             .menu-section 
+                .menu-header Услуги
+                .menu-navigatiom
+                    .navigation-tab.tab-cardan 
+                        img.img-cardan.img-active(src="./assets/images/content/cardan.svg", alt="")
+                        
+                        .tab-header.tab-active Ремонт карданов
+                    .navigation-tab.tab-turbo 
+                        img.img-turbo(src="./assets/images/content/turbo.svg", alt="")
+                        .tab-header Ремонт турбин
+                    .navigation-tab.tab-rotor 
+                        img.img-rotor(src="./assets/images/content/rotor.svg", alt="")
+                        .tab-header Балансировка ротов
+                    .navigation-tab.tab-treat 
+                        img.img-treat(src="./assets/images/content/treat.svg", alt="")
+                        .tab-header Механическая обработка
             .show-section 
             .offer-section 
             .apply-section
