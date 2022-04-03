@@ -55,9 +55,56 @@ html(lang="en")
                     .navigation-tab.tab-treat 
                         img.img-treat(src="./assets/images/content/treat.svg", alt="")
                         .tab-header Механическая обработка
-            .show-section 
+            .show-section
+                .show--gray
+                .show-container.show--cardan
+                    .show-description 
+                        span Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                        span Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    .show-box 
+                        img(src="./assets/images/content/main-second.jpg", alt="").show-image
+                        a(href="./cardan.html").show-more Узнать больше
             .offer-section 
+                .offer-header Что мы предлагаем
+                .offer-subheader Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                .offer-container 
+                    .offer-row 
+                        .offer-card 
+                            .card-number 01
+                            .card-header Заголовок
+                            ul.card-list 
+                                li Lorem ipsum dolor sit 
+                                li Lorem ipsum dolor sit 
+                                li Lorem ipsum dolor sit
+                            a(href="./cardan.html").card-more
+                        .offer-image 
+                        .offer-card 
+                            .card-number 03
+                            .card-header Заголовок
+                            ul.card-list 
+                                li Lorem ipsum dolor sit 
+                                li Lorem ipsum dolor sit 
+                                li Lorem ipsum dolor sit 
+                            a(href="./cardan.html").card-more
+                    .offer-row 
+                        .offer-image 
+                        .offer-card 
+                            .card-number 02
+                            .card-header Заголовок
+                            ul.card-list 
+                                li Lorem ipsum dolor sit 
+                                li Lorem ipsum dolor sit 
+                                li Lorem ipsum dolor sit  
+                            a(href="./cardan.html").card-more
+                        .offer-image  
             .apply-section
+                .apply-container 
+                    .apply-header Оставить заявку прямо сейчас
+                    .apply-subheader Нам менеджер свяжется с вами в рабочее время
+                .apply-form
+                    input(type="text", name="userName", required, placeholder="Ваше имя").apply-form__input
+                    input(type="text", name="userPhone", required, placeholder="Ваш телефон").apply-form__input
+                    button(type="submit").apply-form__button Отправить
         footer.footer
         script(src="./assets/js/jquery.min.js")
         script(src="./assets/js/plugins.min.js")
