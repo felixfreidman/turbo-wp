@@ -1,0 +1,258 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Онлайн-магазин
+        link(rel="shortcut icon", href="./assets/images/content/logo_custom.svg", type="image/x-icon")
+        link(rel="stylesheet", href="./style.min.css")
+    body 
+        header.header 
+            .logo-container
+                a(href="./") 
+                    img.logo#toMain(src="./assets/images/content/logo_custom.svg", alt="Company Logo")
+                span.logo-caption Кардан Сервис
+            .navigation
+                a.navigation-link(href="./index.html#toProcess") Услуги
+                a.navigation-link(href="./shop.html") Магазин
+                a.navigation-link(href="./contacts.html") Контакты
+            .contacts 
+                a(href="tel:+74951864203") +7 (495) 186-42-03 
+            .apply 
+                .apply-btn#headerApply  Оставить заявку
+        .mobile-header
+            .logo-container
+                a(href="#toMain") 
+                    img.logo#toMain(src="./assets/images/content/main_logo.svg" alt="Company Logo")
+                span.logo-caption Кардан Сервис
+            .mobile-header__burger-menu
+                span.cross-one--mobile 
+                span.cross-two--mobile
+                span.cross-left
+        .mobile-menu#mobileNavigation
+            .navigation
+                a.navigation-link(href="#toProcess") Услуги
+                a.navigation-link(href="./shop.html") Магазин
+                a.navigation-link(href="./contacts.html") Контакты
+        
+            .contacts
+                a(href="tel:+74951864203") +7 (495) 186-42-03
+            .apply
+                .apply-btn#headerApply Оставить заявку
+        
+        main.main 
+            .section#toGreeting.section--greeting
+                .greeting-container 
+                    .greeting-header Онлайн-Магазин
+                    .greeting-subheader 
+                    .apply-btn.apply-btn--demo Оставить заявку
+                .mobile-image 
+                    img(src="./assets/images/content/main.png", alt="")
+            .section.section--shop 
+                .shop
+                    .shop-sidebar 
+                        .sidebar-header Фильтры
+                        .sidebar-container 
+                            .container-header Заголовок группы фильтров
+                            .container-filters 
+                                label.filter-container(for="filter1") 
+                                    input#filter1(type="checkbox", name="nameFilter")
+                                    span.checkmark 
+                                    .filter-name Первый фильтр
+                                label.filter-container(for="filter2") 
+                                    input#filter2(type="checkbox", name="nameFilter")
+                                    span.checkmark 
+                                    .filter-name Первый фильтр
+                                label.filter-container(for="filter3") 
+                                    input#filter3(type="checkbox", name="nameFilter")
+                                    span.checkmark 
+                                    .filter-name Первый фильтр
+                                label.filter-container(for="filter4") 
+                                    input#filter4(type="checkbox", name="nameFilter")
+                                    span.checkmark 
+                                    .filter-name Первый фильтр
+                                label.filter-container(for="filter5") 
+                                    input#filter5(type="checkbox", name="nameFilter")
+                                    span.checkmark 
+                                    .filter-name Первый фильтр
+                            .container-header Заголовок группы фильтров
+                            .container-filters 
+                                label.filter-container(for="filter7") 
+                                    input#filter7(type="checkbox", name="nameFilter2")
+                                    span.checkmark 
+                                    .filter-name Второй фильтр
+                                label.filter-container(for="filter8") 
+                                    input#filter8(type="checkbox", name="nameFilter2")
+                                    span.checkmark 
+                                    .filter-name Второй фильтр
+                                label.filter-container(for="filter9") 
+                                    input#filter9(type="checkbox", name="nameFilter2")
+                                    span.checkmark 
+                                    .filter-name Второй фильтр
+                                label.filter-container(for="filter10") 
+                                    input#filter10(type="checkbox", name="nameFilter2")
+                                    span.checkmark 
+                                    .filter-name Второй фильтр
+                                label.filter-container(for="filter11") 
+                                    input#filter11(type="checkbox", name="nameFilter2")
+                                    span.checkmark 
+                                    .filter-name Второй фильтр
+                        .apply-btn Применить            
+                    .shop-content
+                        a(href="./cardan.html").shop-card 
+                            .card-image
+                                img(src="./assets/images/content/main_treat.jpg", alt="")
+                            .card-header Товар 1
+                            .card-content 
+                                .card-description Очень хороший товар, и прочее описание
+                                .card-price 
+                                    span.price 1200
+                                    span.currency руб
+                                .card-time Установим за 12 часов
+                            .card-more
+                        a(href="./cardan.html").shop-card 
+                            .card-image
+                                img(src="./assets/images/content/main_treat.jpg", alt="")
+                            .card-header Товар 1
+                            .card-content 
+                                .card-description Очень хороший товар, и прочее описание
+                                .card-price 
+                                    span.price 1200
+                                    span.currency руб
+                                .card-time Установим за 12 часов
+                            .card-more
+                        a(href="./cardan.html").shop-card 
+                            .card-image
+                                img(src="./assets/images/content/main_treat.jpg", alt="")
+                            .card-header Товар 1
+                            .card-content 
+                                .card-description Очень хороший товар, и прочее описание
+                                .card-price 
+                                    span.price 1200
+                                    span.currency руб
+                                .card-time Установим за 12 часов
+                            .card-more
+                        a(href="./cardan.html").shop-card 
+                            .card-image
+                                img(src="./assets/images/content/main_treat.jpg", alt="")
+                            .card-header Товар 1
+                            .card-content 
+                                .card-description Очень хороший товар, и прочее описание
+                                .card-price 
+                                    span.price 1200
+                                    span.currency руб
+                                .card-time Установим за 12 часов
+                            .card-more
+                        a(href="./cardan.html").shop-card 
+                            .card-image
+                                img(src="./assets/images/content/main_treat.jpg", alt="")
+                            .card-header Товар 1
+                            .card-content 
+                                .card-description Очень хороший товар, и прочее описание
+                                .card-price 
+                                    span.price 1200
+                                    span.currency руб
+                                .card-time Установим за 12 часов
+                            .card-more
+                        a(href="./cardan.html").shop-card 
+                            .card-image
+                                img(src="./assets/images/content/main_treat.jpg", alt="")
+                            .card-header Товар 1
+                            .card-content 
+                                .card-description Очень хороший товар, и прочее описание
+                                .card-price 
+                                    span.price 1200
+                                    span.currency руб
+                                .card-time Установим за 12 часов
+                            .card-more
+                        
+                        
+            
+            
+            .section#toOffer.section--offer 
+                .offer-header Что мы предлагаем
+                .offer-subheader Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                .offer-container 
+                    .offer-row 
+                        .offer-card 
+                            .card-number 01
+                            .card-header Заголовок
+                            ul.card-list 
+                                li Lorem ipsum dolor sit 
+                                li Lorem ipsum dolor sit 
+                                li Lorem ipsum dolor sit
+                            a(href="./cardan.html").card-more
+                        .offer-image 
+                        .offer-card 
+                            .card-number 03
+                            .card-header Заголовок
+                            ul.card-list 
+                                li Lorem ipsum dolor sit 
+                                li Lorem ipsum dolor sit 
+                                li Lorem ipsum dolor sit 
+                            a(href="./cardan.html").card-more
+                    .offer-row 
+                        .offer-image 
+                        .offer-card 
+                            .card-number 02
+                            .card-header Заголовок
+                            ul.card-list 
+                                li Lorem ipsum dolor sit 
+                                li Lorem ipsum dolor sit 
+                                li Lorem ipsum dolor sit  
+                            a(href="./cardan.html").card-more
+                        .offer-image
+        footer.footer#toFooter 
+            .footer-row.footer-row--expanded 
+                .logo-container
+                    a(href="#toMain") 
+                        img.logo#toMain(src="./assets/images/content/logo_custom.svg", alt="Company Logo")
+                    span.logo-caption Кардан Сервис
+                .mobile-container.mobile-container--second-to-column
+                    .navigation
+                        a.navigation-link(href="#toProcess") Услуги
+                        a.navigation-link(href="./shop.html") Магазин
+                        a.navigation-link(href="./contacts.html") Контакты
+                    .mobile-container.mobile-container--first-to-column
+                        .contacts 
+                            a(href="tel:+74951864203") +7 (495) 186-42-03 
+                        .apply 
+                            .apply-btn.apply-btn--footer Оставить заявку
+            .footer-row 
+                .company-info
+                    span.company-name ©2019–2022 Кардан Сервис
+                    span.company-privacy Политика конфиденциальности
+                .developer-info Сделано в Freidman Solutions
+        .dark-layer.js--hidden
+            .form.apply-form#applyForm 
+                .form-close#closeForm
+                    span.cross-one 
+                    span.cross-two
+                .form-header Оставить заявку
+                .form-subheader Начните ремонт прямо сейчас.
+                label(for="userName") 
+                    input.form-input#userName(type="text", name="userName", placeholder="ФИО")
+                label(for="userPhone") 
+                    input.form-input#userPhone(type="text", name="userName" ,placeholder="Телефон")
+                //- label(for="userCompany") 
+                //-     input.form-input#userCompany(type="text", name="userName" ,placeholder="Причина")
+                //- label(for="userArea") 
+                //-     input.form-input#userArea(type="text", name="userName" ,placeholder="Область деятельности")
+                
+                button.form-button(type="submit") Отправить
+                .form-caption Нажимая на кнопку “отправить”, вы даете согласие на обработку персональных данных
+            .applied-screen.js--hidden#appliedForm
+                .form-close#closeAppliedForm
+                    span.cross-one 
+                    span.cross-two
+                img.applied-icon(src="./assets/images/content/main_applied.png", alt="Form Applied")
+                .applied-header Заявка успешно отправлена!
+                .applied-subheader 
+                    | Мы свяжемся с вами в ближайшее время!
+                    | По всем интересующим вопросам вы можете позвонить нам по телефону 
+                    a(href="tel:+74951864203") +7 (495) 186-42-03
+                .form-button.form-button--form#closeAppliedFormButton Вернуться на сайт
+        script(src="./assets/js/jquery.min.js")
+        script(src="./assets/js/plugins.min.js")
+        script(src="./assets/js/main.min.js")
