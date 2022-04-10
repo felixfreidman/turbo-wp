@@ -53,7 +53,7 @@ if (!windowLocation.includes("privacy")) {
 
   const sectionList = document.getElementById("sectionList");
   const sectionMenu = document.getElementById("sectionMenu");
-  const sectionAbilities = document.getElementById("toMenu");
+  const sectionAbilities = document.getElementById("toOffer");
   // MENU POINTS
   const firstMenuPoint = document.getElementById("firstMenuPoint");
   const secondMenuPoint = document.getElementById("secondMenuPoint");

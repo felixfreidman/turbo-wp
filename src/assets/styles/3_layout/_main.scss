@@ -181,7 +181,8 @@ a {
         align-items: center;
     }
     &--greeting {
-        background: url("./assets/images/content/main.png") center;
+        background: url("./assets/images/content/main_bg4.png") center;
+        background-size: cover;
         max-height: 780px;
         height: 100vh;
         display: flex;
@@ -375,6 +376,7 @@ a {
                     margin-bottom: 40px;
                 }
                 &__image {
+                    width: 100%;
                     img {
                         width: 100%;
                         height: 70%;

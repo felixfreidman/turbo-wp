@@ -14,9 +14,9 @@ html(lang="en")
                     img.logo#toMain(src="./assets/images/content/logo_custom.svg", alt="Company Logo")
                 span.logo-caption Кардан Сервис
             .navigation
-                a.navigation-link(href="#toGreeting") Услуги
-                a.navigation-link(href="#toProcess") Магазин
-                a.navigation-link(href="#toAbilities") Контакты
+                a.navigation-link(href="#toProcess") Услуги
+                a.navigation-link(href="./shop.html") Магазин
+                a.navigation-link(href="./contacts.html") Контакты
             .contacts 
                 a(href="tel:+74951864203") +7 (495) 186-42-03 
             .apply 
@@ -32,9 +32,9 @@ html(lang="en")
                 span.cross-left
         .mobile-menu#mobileNavigation
             .navigation
-                a.navigation-link(href="#toGreeting") Услуги
-                a.navigation-link(href="#toProcess") Магазин
-                a.navigation-link(href="toAbilities") Контакты
+                a.navigation-link(href="#toProcess") Услуги
+                a.navigation-link(href="./shop.html") Магазин
+                a.navigation-link(href="./contacts.html") Контакты
         
             .contacts
                 a(href="tel:+74951864203") +7 (495) 186-42-03
@@ -44,121 +44,69 @@ html(lang="en")
         main.main 
             .section#toGreeting.section--greeting
                 .greeting-container 
-                    .greeting-header Cистема удаленного контроля объектов
-                    .greeting-subheader ERP-система для автоматизации контроля объектов и автоматического расчета зарплаты сотрудников
-                    .apply-btn.apply-btn--demo ПОЛУЧИТЬ ДЕМО-ДОСТУП
+                    .greeting-header Ремонт и изготовление карданных валов
+                    .greeting-subheader Наши специалисты выявят все дефекты и устранят их.
+                    .apply-btn.apply-btn--demo Оставить заявку
                 .mobile-image 
                     img(src="./assets/images/content/main.png", alt="")
-            .section#toBenefits.section--benefits
-                .section-header Выгода от внедрения
-                .section-container 
-                    .image-pagination 
-                        .image-toggler.image-toggler--active#image--toggle1
-                            .image-toggler__container
-                                .image-header Все в одном месте
-                                .image-content Кукушка собирает данные о всех объектах, постах и сотрудниках 24/7
-                            .image-toggler__icon    
-                                img.image-icon(src="./assets/images/content/main_arrow.png")
-                        .image-toggler#image--toggle1
-                            .image-toggler__container
-                                .image-header Экономит до 22% с зарплаты сотрудника
-                                .image-content Кукушка вычитает время опозданий, прогулов и сумму штрафов из зарплаты сотрудников
-                            .image-toggler__icon    
-                                img.image-icon(src="./assets/images/content/main_coins.png")
-                        .image-toggler#image--toggle1
-                            .image-toggler__container
-                                .image-header Повышает качество контроля объектов
-                                .image-content За счет системы постоянного мониторинга, прогнозирования состояния объектов, награждения лучших сотрудников
-                            .image-toggler__icon    
-                                img.image-icon(src="./assets/images/content/main_loopa.png")
-                    .image-presentation 
-                        .image--toggle1.image-toggle--show 
-                            img(src="./assets/images/content/main_screens.png", alt="Toggle 3")
-                        .image--toggle2.image-toggle--hidden 
-                            img(src="./assets/images/content/main_screens.png", alt="Toggle 3")
-                        .image--toggle3.image-toggle--hidden
-                            img(src="./assets/images/content/main_screens.png", alt="Toggle 3")
             .section#toProcess.section--process
-                .section-header Как устроенна Кукушка?
+                .section-header Какие услуги мы предостовляем?
                 .section-container
                     .section-list#sectionList 
                         .list-item#firstListPoint
                             .item-counter 1
-                            .item-value Профиль сотрудника
+                            .item-value Ремонт карданов
                         .list-item#secondListPoint
                             .item-counter 2
-                            .item-value Заступление на объект
+                            .item-value Ремонт турбин
                         .list-item#thirdListPoint
                             .item-counter 3
-                            .item-value Авторизация на объекте
+                            .item-value Балансировка роторов
                         .list-item#fourthListPoint
                             .item-counter 4
-                            .item-value Проверка во время смены
+                            .item-value Механическая обработка
                         .list-item#fifthListPoint
                             .item-counter 5
-                            .item-value Мониторинг объекта
+                            .item-value Интернет-магазин
                     .section-menu#sectionMenu 
                         .menu-item 
                             .menu-item__header-container#firstMenuPoint
                                 .menu-item__counter 1
-                                .menu-item__header Профиль сотрудника
-                            .menu-item__subheader Каждый сотрудник имеет личный ID для идентификации в Системе
+                                .menu-item__header Ремонт карданов
+                            .menu-item__subheader Карданный вал является важным узлом автомобиля. Ни один автомобиль с задним или полным приводом не может обойтись без этой детали. Его основная задача состоит в том, чтобы передать вращательное движение от коробки переключения передач к распределительному редуктору ведущего моста.
                             .menu-item__image
-                                    img(src="./assets/images/content/main__menu1.png", alt="")
+                                    img(src="./assets/images/content/part1.jpg", alt="")
 
                         .menu-item 
                             .menu-item__header-container#secondMenuPoint
                                 .menu-item__counter 2
-                                .menu-item__header Заступление на объект
-                            .menu-item__subheader Сотрудник приходит на объект для начала рабочей смены 
+                                .menu-item__header Ремонт турбин
+                            .menu-item__subheader Турбина состоит из двух корпусов — корпуса компрессора, через который всасывается воздух и нагнетается во впускной коллектор, и корпуса турбины, через который проходят выхлопные газы вращая ротор турбины и выходят в выхлопной тракт.
                             .menu-item__image
-                                    img(src="./assets/images/content/main__menu2.png", alt="")
+                                    img(src="./assets/images/content/main_turbo.jpg", alt="")
                         .menu-item 
                             .menu-item__header-container#thirdMenuPoint
                                 .menu-item__counter 3
-                                .menu-item__header Авторизация на объекте
-                            .menu-item__subheader Сотрудник звонит на единый номер Кукушки с номера телефона объекта и вводит свой ID для заступления на смену
+                                .menu-item__header Балансировка роторов
+                            .menu-item__subheader На сегодняшний день балансировку карданного вала предлагает практически каждая мастерская. Чтобы быть уверенными в качестве работы, выберите проверенную организацию, где все работы проводятся на высококачественном оборудовании. Специальное оборудование позволяет ООО «Кардан Сервис» произвести балансировку карданного вала.
                             .menu-item__image
-                                    img(src="./assets/images/content/main__menu3.png", alt="")
+                                    img(src="./assets/images/content/main_rotor.jpg", alt="")
                         .menu-item 
                             .menu-item__header-container#fourthMenuPoint
                                 .menu-item__counter 4
-                                .menu-item__header Проверка во время смены
-                            .menu-item__subheader Во время смены сотрудника Кукушка периодически звонит на номер телефона объекта и проверяет сотрудника: задает ему различные вопросы, записывает голос, ведет диалог. Все данные записываются в Системе
+                                .menu-item__header Механическая обработка
+                            .menu-item__subheader  Применяемое оборудование дает возможность выполнять работы с необходимой чистотой поверхностей и с высокой точностью. Электроэрозионная обработка позволяет получить детали различной, даже очень сложной конфигурации. По желанию заказчика могут изготавливаться вырубные штампы и другие детали со сложной геометрией
                             .menu-item__image
-                                    img(src="./assets/images/content/main__menu4.png", alt="")
+                                    img(src="./assets/images/content/main_treat.jpg", alt="")
                         .menu-item 
                             .menu-item__header-container#fifthMenuPoint
                                 .menu-item__counter 5
-                                .menu-item__header Мониторинг объекта
+                                .menu-item__header Интернет-магазин
                             .menu-item__subheader Менеджеры видят состояние объектов и знают, как работают сотрудники и не дергают их. По окончании смены сотрудник звонит на единый номер с номера телефона объекта и вводит свой ID
                             .menu-item__image
-                                    img(src="./assets/images/content/main__menu5.png", alt="")
-            .section#toMenu.section--menu 
-                .menu-header Услуги
-                .menu-navigatiom
-                    .navigation-tab.tab-cardan 
-                        img.img-cardan.img-active(src="./assets/images/content/cardan.svg", alt="")
-                        
-                        .tab-header.tab-active Ремонт карданов
-                    .navigation-tab.tab-turbo 
-                        img.img-turbo(src="./assets/images/content/turbo.svg", alt="")
-                        .tab-header Ремонт турбин
-                    .navigation-tab.tab-rotor 
-                        img.img-rotor(src="./assets/images/content/rotor.svg", alt="")
-                        .tab-header Балансировка ротов
-                    .navigation-tab.tab-treat 
-                        img.img-treat(src="./assets/images/content/treat.svg", alt="")
-                        .tab-header Механическая обработка
-            .section#toShow.section--show
-                .show--gray
-                .show-container.show--cardan
-                    .show-description 
-                        span Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-                        span Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    .show-box 
-                        img(src="./assets/images/content/main-second.jpg", alt="").show-image
-                        a(href="./cardan.html").show-more Узнать больше
+                                    img(src="./assets/images/content/main_bg4.png", alt="")
+            
+            
             .section#toOffer.section--offer 
                 .offer-header Что мы предлагаем
                 .offer-subheader Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -197,12 +145,12 @@ html(lang="en")
                 .logo-container
                     a(href="#toMain") 
                         img.logo#toMain(src="./assets/images/content/logo_custom.svg", alt="Company Logo")
-                    span.logo-caption Кукушка
+                    span.logo-caption Кардан Сервис
                 .mobile-container.mobile-container--second-to-column
                     .navigation
-                        a.navigation-link(href="#toGreeting") Услуги
-                        a.navigation-link(href="#toBenefits") Магазин
-                        a.navigation-link(href="") Контакты
+                        a.navigation-link(href="#toProcess") Услуги
+                        a.navigation-link(href="./shop.html") Магазин
+                        a.navigation-link(href="./contacts.html") Контакты
                     .mobile-container.mobile-container--first-to-column
                         .contacts 
                             a(href="tel:+74951864203") +7 (495) 186-42-03 
@@ -219,15 +167,15 @@ html(lang="en")
                     span.cross-one 
                     span.cross-two
                 .form-header Оставить заявку
-                .form-subheader Начните автоматизацию прямо сейчас. Оставьте заявку и получите бесплатный демо-доступ к Кукушке
+                .form-subheader Начните ремонт прямо сейчас.
                 label(for="userName") 
                     input.form-input#userName(type="text", name="userName", placeholder="ФИО")
                 label(for="userPhone") 
                     input.form-input#userPhone(type="text", name="userName" ,placeholder="Телефон")
-                label(for="userCompany") 
-                    input.form-input#userCompany(type="text", name="userName" ,placeholder="Название компании")
-                label(for="userArea") 
-                    input.form-input#userArea(type="text", name="userName" ,placeholder="Область деятельности")
+                //- label(for="userCompany") 
+                //-     input.form-input#userCompany(type="text", name="userName" ,placeholder="Причина")
+                //- label(for="userArea") 
+                //-     input.form-input#userArea(type="text", name="userName" ,placeholder="Область деятельности")
                 
                 button.form-button(type="submit") Отправить
                 .form-caption Нажимая на кнопку “отправить”, вы даете согласие на обработку персональных данных
@@ -245,3 +193,31 @@ html(lang="en")
         script(src="./assets/js/jquery.min.js")
         script(src="./assets/js/plugins.min.js")
         script(src="./assets/js/main.min.js")
+
+
+
+        //- .section#toMenu.section--menu 
+            //-     .menu-header Услуги
+            //-     .menu-navigatiom
+            //-         .navigation-tab.tab-cardan 
+            //-             img.img-cardan.img-active(src="./assets/images/content/cardan.svg", alt="")
+                        
+            //-             .tab-header.tab-active Ремонт карданов
+            //-         .navigation-tab.tab-turbo 
+            //-             img.img-turbo(src="./assets/images/content/turbo.svg", alt="")
+            //-             .tab-header Ремонт турбин
+            //-         .navigation-tab.tab-rotor 
+            //-             img.img-rotor(src="./assets/images/content/rotor.svg", alt="")
+            //-             .tab-header Балансировка ротов
+            //-         .navigation-tab.tab-treat 
+            //-             img.img-treat(src="./assets/images/content/treat.svg", alt="")
+            //-             .tab-header Механическая обработка
+            //- .section#toShow.section--show
+            //-     .show--gray
+            //-     .show-container.show--cardan
+            //-         .show-description 
+            //-             span Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+            //-             span Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            //-         .show-box 
+            //-             img(src="./assets/images/content/main-second.jpg", alt="").show-image
+            //-             a(href="./cardan.html").show-more Узнать больше

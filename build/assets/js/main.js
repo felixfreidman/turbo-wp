@@ -188,7 +188,7 @@ if (!windowLocation.includes("privacy")) {
 
   var sectionList = document.getElementById("sectionList");
   var sectionMenu = document.getElementById("sectionMenu");
-  var sectionAbilities = document.getElementById("toMenu"); // MENU POINTS
+  var sectionAbilities = document.getElementById("toOffer"); // MENU POINTS
 
   var firstMenuPoint = document.getElementById("firstMenuPoint");
   var secondMenuPoint = document.getElementById("secondMenuPoint");
