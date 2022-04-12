@@ -84,63 +84,6 @@ var windowLocation = window.location.href;
 console.log(windowLocation);
 
 if (!windowLocation.includes("privacy")) {
-  var stickTheMenu = function stickTheMenu() {
-    if (window.pageYOffset >= sectionListOffset) {
-      sectionList.classList.add("sticky");
-      sectionMenu.classList.add("menuPosition");
-    } else {
-      sectionList.classList.remove("sticky");
-      sectionMenu.classList.remove("menuPosition");
-    }
-  };
-
-  var unStickTheMenu = function unStickTheMenu() {
-    if (window.pageYOffset > sectionAbilitiesOffset - 350) {
-      sectionList.classList.remove("sticky");
-      sectionMenu.classList.remove("menuPosition");
-    }
-  };
-
-  var activateTheListPoints = function activateTheListPoints() {
-    if (window.pageYOffset >= firstMenuPointOffset - 100) {
-      firstListPoint.classList.add("list-item--active");
-    } else if (window.pageYOffset <= fourthMenuPointOffset) {
-      firstListPoint.classList.remove("list-item--active");
-    }
-
-    if (window.pageYOffset >= fifthMenuPointOffset - 100) {
-      fifthListPoint.classList.add("list-item--active");
-    } else if (window.pageYOffset <= fifthMenuPointOffset) {
-      fifthListPoint.classList.remove("list-item--active");
-    }
-
-    if (window.pageYOffset >= secondMenuPointOffset - 100) {
-      secondListPoint.classList.add("list-item--active");
-    } else if (window.pageYOffset <= fourthMenuPointOffset) {
-      secondListPoint.classList.remove("list-item--active");
-    }
-
-    if (window.pageYOffset >= thirdMenuPointOffset - 100) {
-      thirdListPoint.classList.add("list-item--active");
-    } else if (window.pageYOffset <= fourthMenuPointOffset) {
-      thirdListPoint.classList.remove("list-item--active");
-    }
-
-    if (window.pageYOffset >= fourthMenuPointOffset - 100) {
-      fourthListPoint.classList.add("list-item--active");
-    } else if (window.pageYOffset <= fourthMenuPointOffset) {
-      fourthListPoint.classList.remove("list-item--active");
-    }
-  };
-
-  var diactivateAllListPoints = function diactivateAllListPoints() {
-    var listPoinstArray = document.querySelectorAll(".list-item");
-    console.log(listPoinstArray);
-    listPoinstArray.forEach(function (point) {
-      point.classList.remove("list-item--active");
-    });
-  };
-
   var _darkLayer = document.querySelector(".dark-layer");
 
   var applyBtns = document.querySelectorAll(".apply-btn");
@@ -179,36 +122,97 @@ if (!windowLocation.includes("privacy")) {
       faq.classList.toggle("faq-block--active");
     });
   });
-
-  window.onscroll = function () {
-    stickTheMenu();
-    unStickTheMenu();
-    activateTheListPoints();
-  };
-
-  var sectionList = document.getElementById("sectionList");
-  var sectionMenu = document.getElementById("sectionMenu");
-  var sectionAbilities = document.getElementById("toOffer"); // MENU POINTS
-
-  var firstMenuPoint = document.getElementById("firstMenuPoint");
-  var secondMenuPoint = document.getElementById("secondMenuPoint");
-  var thirdMenuPoint = document.getElementById("thirdMenuPoint");
-  var fourthMenuPoint = document.getElementById("fourthMenuPoint");
-  var fifthMenuPoint = document.getElementById("fifthMenuPoint"); // LIST POINTS
-
-  var firstListPoint = document.getElementById("firstListPoint");
-  var secondListPoint = document.getElementById("secondListPoint");
-  var thirdListPoint = document.getElementById("thirdListPoint");
-  var fourthListPoint = document.getElementById("fourthListPoint");
-  var fifthListPoint = document.getElementById("fifthListPoint");
-  var sectionListOffset = sectionList.offsetTop;
-  var sectionAbilitiesOffset = sectionAbilities.offsetTop; // MENU POINTS OFFSETS
-
-  var firstMenuPointOffset = firstMenuPoint.offsetTop;
-  var secondMenuPointOffset = secondMenuPoint.offsetTop;
-  var thirdMenuPointOffset = thirdMenuPoint.offsetTop;
-  var fourthMenuPointOffset = fourthMenuPoint.offsetTop;
-  var fifthMenuPointOffset = fifthMenuPoint.offsetTop;
+  var swiper = new Swiper("#greetingSwiper", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination"
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    effect: "cube"
+  }); // window.onscroll = function () {
+  //   stickTheMenu();
+  //   unStickTheMenu();
+  //   activateTheListPoints();
+  // };
+  // const sectionList = document.getElementById("sectionList");
+  // const sectionMenu = document.getElementById("sectionMenu");
+  // const sectionAbilities = document.getElementById("toOffer");
+  // // MENU POINTS
+  // const firstMenuPoint = document.getElementById("firstMenuPoint");
+  // const secondMenuPoint = document.getElementById("secondMenuPoint");
+  // const thirdMenuPoint = document.getElementById("thirdMenuPoint");
+  // const fourthMenuPoint = document.getElementById("fourthMenuPoint");
+  // const fifthMenuPoint = document.getElementById("fifthMenuPoint");
+  // // LIST POINTS
+  // const firstListPoint = document.getElementById("firstListPoint");
+  // const secondListPoint = document.getElementById("secondListPoint");
+  // const thirdListPoint = document.getElementById("thirdListPoint");
+  // const fourthListPoint = document.getElementById("fourthListPoint");
+  // const fifthListPoint = document.getElementById("fifthListPoint");
+  // let sectionListOffset = sectionList.offsetTop;
+  // const sectionAbilitiesOffset = sectionAbilities.offsetTop;
+  // // MENU POINTS OFFSETS
+  // const firstMenuPointOffset = firstMenuPoint.offsetTop;
+  // const secondMenuPointOffset = secondMenuPoint.offsetTop;
+  // const thirdMenuPointOffset = thirdMenuPoint.offsetTop;
+  // const fourthMenuPointOffset = fourthMenuPoint.offsetTop;
+  // const fifthMenuPointOffset = fifthMenuPoint.offsetTop;
+  // function stickTheMenu() {
+  //   if (window.pageYOffset >= sectionListOffset) {
+  //     sectionList.classList.add("sticky");
+  //     sectionMenu.classList.add("menuPosition");
+  //   } else {
+  //     sectionList.classList.remove("sticky");
+  //     sectionMenu.classList.remove("menuPosition");
+  //   }
+  // }
+  // function unStickTheMenu() {
+  //   if (window.pageYOffset > sectionAbilitiesOffset - 350) {
+  //     sectionList.classList.remove("sticky");
+  //     sectionMenu.classList.remove("menuPosition");
+  //   }
+  // }
+  // function activateTheListPoints() {
+  //   if (window.pageYOffset >= firstMenuPointOffset - 100) {
+  //     firstListPoint.classList.add("list-item--active");
+  //   } else if (window.pageYOffset <= fourthMenuPointOffset) {
+  //     firstListPoint.classList.remove("list-item--active");
+  //   }
+  //   if (window.pageYOffset >= fifthMenuPointOffset - 100) {
+  //     fifthListPoint.classList.add("list-item--active");
+  //   } else if (window.pageYOffset <= fifthMenuPointOffset) {
+  //     fifthListPoint.classList.remove("list-item--active");
+  //   }
+  //   if (window.pageYOffset >= secondMenuPointOffset - 100) {
+  //     secondListPoint.classList.add("list-item--active");
+  //   } else if (window.pageYOffset <= fourthMenuPointOffset) {
+  //     secondListPoint.classList.remove("list-item--active");
+  //   }
+  //   if (window.pageYOffset >= thirdMenuPointOffset - 100) {
+  //     thirdListPoint.classList.add("list-item--active");
+  //   } else if (window.pageYOffset <= fourthMenuPointOffset) {
+  //     thirdListPoint.classList.remove("list-item--active");
+  //   }
+  //   if (window.pageYOffset >= fourthMenuPointOffset - 100) {
+  //     fourthListPoint.classList.add("list-item--active");
+  //   } else if (window.pageYOffset <= fourthMenuPointOffset) {
+  //     fourthListPoint.classList.remove("list-item--active");
+  //   }
+  // }
+  // function diactivateAllListPoints() {
+  //   const listPoinstArray = document.querySelectorAll(".list-item");
+  //   console.log(listPoinstArray);
+  //   listPoinstArray.forEach((point) => {
+  //     point.classList.remove("list-item--active");
+  //   });
+  // }
 } else {
   // Поменять стили header, если на белой странице "Конфиденциальность"
   var _darkLayer2 = document.querySelector(".dark-layer");

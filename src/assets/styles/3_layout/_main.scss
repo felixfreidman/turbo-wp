@@ -17,23 +17,21 @@ a {
 
 // HEADER&FOOTER SECTION ======================================
 .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    background-color: #212021;
     margin-left: auto;
     margin-right: auto;
     height: 39px;
     padding: 23px 0;
-    width: 73%;
-    max-width: 1410px;
+    width: calc(95vw);
     display: flex;
     align-items: center;
     justify-content: flex-start;
     border-bottom: #363636 1px solid;
+    padding-right: 2.5vw !important;
+    padding-left: 2.5vw !important;
     &--dark {
         width: calc(100% - 5vw) !important;
-        max-width: 95vw !important;
+        max-width: 100vw !important;
         background-color: #212021;
         padding-right: 2.5vw !important;
         padding-left: 2.5vw !important;
@@ -934,7 +932,6 @@ a {
                                 color: #212021;
                                 font-size: 14px;
                             }
-
                         }
                         .card-time {
                             color: #bb240d;
